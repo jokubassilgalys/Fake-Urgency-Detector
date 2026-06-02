@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Fake Urgency Detector",
+  "version": "2.0",
+  "description": "Detects and highlights possible fake urgency dark patterns including countdown timers and limited quantity indicators.",
+  "permissions": ["scripting", "activeTab", "tabs", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

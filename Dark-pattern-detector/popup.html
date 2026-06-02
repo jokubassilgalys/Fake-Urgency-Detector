@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Šilgalio "Fake Urgency Detector"</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; width: 320px; }
+    .timer { border-bottom: 1px solid #ccc; padding: 5px; }
+    #clear { 
+      padding: 6px 12px; 
+      margin-top: 10px; 
+      border: none; 
+      border-radius: 4px; 
+      background: #d9534f; 
+      color: white; 
+      cursor: pointer; 
+      margin-bottom:15px;
+    }
+    #clear button:hover { background: #c9302c; }
+  </style>
+</head>
+<body>
+  <h3>Šilgalio "Fake Urgency Detector"</h3>
+
+  <div id="activeSite" style="margin-bottom:10px; color:#555;">
+    Site: <span id="activeHost">…</span>
+  </div>
+
+  <div id="controls" style="display:flex; gap:8px; margin-bottom:10px;">
+    <button id="clear">Clear All Saved</button>
+  </div>
+
+  <h4 style="margin:6px 0;">This page <span id="timerCount" style="color:#777; font-weight:normal;"></span></h4>
+  <div id="currentSiteTimers"></div>
+
+  <h4 style="margin:12px 0 4px;">Other sites</h4>
+  <div id="otherSites"></div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

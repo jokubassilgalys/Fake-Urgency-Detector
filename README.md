@@ -1,4 +1,5 @@
-# Netikro skubumo aptikimo plėtinys (Fake Urgency Detector)
+# Netikro skubumo aptikimo plėtinys (Fake Urgency Detector) 
+(EN translation below)
 
 „Chrome“ naršyklės plėtinys, kuris automatiškai aptinka ir pažymi **netikro skubumo šablonus** el. prekybos ir kitose svetainėse — įskaitant atgalinio skaičiavimo laikmačius ir riboto kiekio indikatorius, kurie gali būti manipuliaciniai ar klaidinantys.
 

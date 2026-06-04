@@ -1,6 +1,6 @@
-# Netikro skubumo aptiktuvas (Fake Urgency Detector)
+# Netikro skubumo aptikimo plėtinys (Fake Urgency Detector)
 
-„Chrome" naršyklės plėtinys, kuris automatiškai aptinka ir pažymi **netikro skubumo tamsiuosius šablonus** el. prekybos ir kitose svetainėse — įskaitant atgalinio skaičiavimo laikmačius ir riboto kiekio indikatorius, kurie gali būti manipuliaciniai ar klaidinantys.
+„Chrome“ naršyklės plėtinys, kuris automatiškai aptinka ir pažymi **netikro skubumo šablonus** el. prekybos ir kitose svetainėse — įskaitant atgalinio skaičiavimo laikmačius ir riboto kiekio indikatorius, kurie gali būti manipuliaciniai ar klaidinantys.
 
 ---
 
@@ -8,9 +8,9 @@
 
 Daugelis svetainių naudoja psichologinio spaudimo taktikas, skatinančias greitus sprendimus. Plėtinys aptinka dvi pagrindines kategorijas:
 
-**Atgalinio skaičiavimo laikmačiai** — elementai, kurie skaičiuoja atgal, siekdami sukurti laiko spaudimo jausmą (pvz. „Pasiūlymas baigiasi po 00:14:32"). Plėtinys stebi DOM struktūrą ieškodamas skaitmeninių elementų, kurie laikui bėgant mažėja, ir automatiškai patikrina, ar laikmatis yra tikras, ar netikras.
+**Atgalinio skaičiavimo laikmačiai** — elementai, kurie skaičiuoja atgal, siekdami sukurti laiko spaudimo jausmą (pvz. „Pasiūlymas baigiasi po 00:14:32“). Plėtinys stebi DOM struktūrą ieškodamas skaitmeninių elementų, kurie laikui bėgant mažėja, ir automatiškai patikrina, ar laikmatis yra tikras, ar netikras.
 
-**Riboto kiekio indikatoriai** — tekstas, teigiamas apie deficitą (pvz. „Liko tik 3!", „12 žmonių šiuo metu žiūri"). Plėtinys ieško tokių frazių tiek anglų, tiek lietuvių kalbomis.
+**Riboto kiekio indikatoriai** — tekstas, teigiamas apie deficitą (pvz. „Liko tik 3!“, „12 žmonių šiuo metu žiūri“). Plėtinys ieško tokių frazių tiek anglų, tiek lietuvių kalbomis.
 
 Aptikus elementą:
 - Jis **pažymimas puslapyje** spalvotu punktyriniu rėmeliu (raudonas — laikmaičiams, oranžinis — kiekio indikatoriams)
@@ -58,22 +58,22 @@ Plėtinys įkeliamas kaip **nesupakuotas plėtinys** tiesiogiai iš šaltinio �
 
 ### Reikalavimai
 
-- „Google Chrome" (arba bet kokia „Chromium" pagrindu veikianti naršyklė, pvz. „Edge" ar „Brave")
+- „Google Chrome“ (arba bet kokia „Chromium“ pagrindu veikianti naršyklė, pvz. „Edge“ ar „Brave“)
 - Node.js ar kiti įrankiai nereikalingi
 
 ### Diegimo žingsniai
 
 1. **Atsisiųskite arba klonuokite šią saugyklą** į aplanką savo kompiuteryje.
 
-2. **Atidarykite „Chrome"** ir eikite į `chrome://extensions`.
+2. **Atidarykite „Chrome“** ir eikite į `chrome://extensions`.
 
 3. **Įjunkite kūrėjo režimą** naudodami perjungiklį viršutiniame dešiniajame puslapio kampe.
 
-4. Spustelėkite **„Load unpacked"** („Įkelti nesupakuotą").
+4. Spustelėkite **„Load unpacked“** („Įkelti nesupakuotą“).
 
 5. **Pasirinkite aplanką** su plėtinio failais (tą, kuriame yra `manifest.json`).
 
-6. Plėtinys atsiras jūsų sąraše kaip **„Fake Urgency Detector"**, o jo piktograma — „Chrome" įrankių juostoje.
+6. Plėtinys atsiras jūsų sąraše kaip **„Fake Urgency Detector“**, o jo piktograma — „Chrome“ įrankių juostoje.
 
 > Jei pakeitėte bet kurį šaltinio failą, grįžkite į `chrome://extensions` ir spustelėkite **atnaujinimo piktogramą** ant plėtinio kortelės, kad jį perkrautumėte.
 
@@ -94,9 +94,9 @@ Plėtinys įkeliamas kaip **nesupakuotas plėtinys** tiesiogiai iš šaltinio �
    - Aptikimai iš **kitų anksčiau aplankytų svetainių**, sugrupuoti pagal prieglobos vardą
    - **Testų būsena ir verdiktas** (Tikras / Įtartinas / Netikras) kiekvienam aptikimui su balų juosta ir atskirų testų rezultatais
 
-4. Naudokite mygtuką **„Highlight on Page"** iššokančiame lange, kad pažymėtumėte ir surastumėte konkretų aptiktą elementą.
+4. Naudokite mygtuką **„Highlight on Page“** iššokančiame lange, kad pažymėtumėte ir surastumėte konkretų aptiktą elementą.
 
-5. Spustelėkite **„Clear All Saved"**, kad išvalytumėte išsaugotą aptikimų istoriją.
+5. Spustelėkite **„Clear All Saved“**, kad išvalytumėte išsaugotą aptikimų istoriją.
 
 ---
 
@@ -115,7 +115,7 @@ Plėtinys įkeliamas kaip **nesupakuotas plėtinys** tiesiogiai iš šaltinio �
 ## Pastabos
 
 - Plėtinys **nesiunčia jokių duomenų** išoriškai. Visas aptikimas, testavimas ir saugojimas vyksta lokaliai jūsų naršyklėje.
-- Skirtingų seansų testas reikalauja, kad „Chrome" leistų plėtiniui veikti inkognito režime. Tai galima įjungti plėtinio detalių puslapyje adresu `chrome://extensions`.
+- Skirtingų seansų testas reikalauja, kad „Chrome“ leistų plėtiniui veikti inkognito režime. Tai galima įjungti plėtinio detalių puslapyje adresu `chrome://extensions`.
 - Testai, susiję su laikmačio pasibaigimo laukimu (pakartotinio pasirodymo testas), gali užtrukti iki ~20 sekundžių po aptikimo.
 - Plėtinys palaiko frazių atpažinimą tiek **anglų**, tiek **lietuvių** kalba.
 
@@ -132,9 +132,9 @@ A Chrome browser extension that automatically detects and marks **fake urgency d
 
 Many websites use psychological pressure tactics to push users into quick decisions. This extension detects two main categories:
 
-**Countdown timers** — elements that visually count down to create a sense of time pressure (e.g. "Offer ends in 00:14:32"). The extension watches the DOM for numeric elements that actively decrease over time, then automatically tests whether the timer is genuine or fake.
+**Countdown timers** — elements that visually count down to create a sense of time pressure (e.g. “Offer ends in 00:14:32“). The extension watches the DOM for numeric elements that actively decrease over time, then automatically tests whether the timer is genuine or fake.
 
-**Limited quantity indicators** — text claiming scarcity (e.g. "Only 3 left in stock!", "12 people are viewing this"). The extension scans for these phrases in both English and Lithuanian and flags suspicious ones.
+**Limited quantity indicators** — text claiming scarcity (e.g. “Only 3 left in stock!“, “12 people are viewing this“). The extension scans for these phrases in both English and Lithuanian and flags suspicious ones.
 
 Once detected, each element is:
 - **Highlighted on the page** with a colored dashed border (red for timers, orange for quantity indicators)
@@ -193,11 +193,11 @@ This extension is loaded as an **unpacked extension** directly from source — n
 
 3. **Enable Developer Mode** using the toggle in the top-right corner of the page.
 
-4. Click **"Load unpacked"**.
+4. Click **“Load unpacked“**.
 
 5. **Select the folder** containing the extension files (the one with `manifest.json` in it).
 
-6. The extension will appear in your list as **"Fake Urgency Detector"** and its icon will appear in the Chrome toolbar.
+6. The extension will appear in your list as **“Fake Urgency Detector“** and its icon will appear in the Chrome toolbar.
 
 > If you make changes to any source file, go back to `chrome://extensions` and click the **refresh icon** on the extension card to reload it.
 
@@ -218,9 +218,9 @@ This extension is loaded as an **unpacked extension** directly from source — n
    - Detections from **other previously visited sites**, grouped by hostname
    - The **test status and verdict** (Real / Suspicious / Fake) for each detection, with a score bar and the individual test results
 
-4. Use the **"Highlight on Page"** button in the popup to scroll to and flash a specific detected element.
+4. Use the **“Highlight on Page“** button in the popup to scroll to and flash a specific detected element.
 
-5. Click **"Clear All Saved"** to wipe the stored detection history.
+5. Click **“Clear All Saved“** to wipe the stored detection history.
 
 ---
 
